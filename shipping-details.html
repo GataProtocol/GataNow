@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" />
+    <title>GataNow</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+        <a class="navbar-brand" href="#">
+            <img src="img/gata_logo.png" alt="logo" height="63" width= "164"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gataNavbar">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="gataNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Economy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tokens</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Partnerships</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Develop</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a>Shipping</li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                  </ul>
+                </li>
+            </ul>
+            <span class="navbar-text ml-auto">
+                <a role="button" id="connectButton">
+                    <i class="fa fa-sign-in"></i> Connect to Wallet
+                </a>
+            </span> 
+        </div>
+    </nav>
+    <h3 class="pb-4"> Shipment Details </h3>
+    <form class="shipping">
+      <div class="form-group row">
+          <label for="name" class=" col-1 col-form-label"></label>
+          <div class="col-5">
+              <input type="text" class="form-control" name="weight" placeholder="Weight" />
+          </div>
+          <div class="col-5">
+              <input type="text" class="form-control" name="length" placeholder="Length" />
+          </div>
+      </div>
+      <div class="form-group row">
+          <label for="name" class="col-1 col-form-label"></label>
+          <div class="col-5">
+              <input type="text" class="form-control" name="width" placeholder="Width" />
+          </div>
+          <div class="col-5">
+              <input type="text" class="form-control" name="height" placeholder="Height"/>
+          </div>
+      </div>
+      <h5> SHIPPING METHOD</h5>
+      <div class="row">
+        <div class="col text-center">
+            <button id="btnSearch" class="btn btn-dark"> Standard </button>
+            <button id="btnClear" class="btn btn-dark"> Express </button>
+        </div>
+    </div>
+    
+    <div class=" row">
+        <div class="col text-center">
+            <button class="btn btn-warning" href="shipping-details.html" role="button">Continue</button>
+        </div>
+    </div>
+
+
+    </form>
+    
+</body>
