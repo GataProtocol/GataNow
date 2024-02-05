@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" />
+    <title>GataNow</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+        <a class="navbar-brand" href="#"> <img src="img/gata_logo.png" alt="logo" height="63" width= "164"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gataNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="gataNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Economy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tokens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Partnerships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Develop</a>
+                </li>
+            </ul>
+            <span class="navbar-text ml-auto">
+                <a role="button" id="connectButton">
+                    <i class="fa fa-sign-in"></i> Connect to Wallet
+                </a>
+            </span> 
+        </div>
+    </nav>
+    <form class="shippingInfo">
+        <div class="form-group row">
+            <label for="name" class="col-2 col-form-label"></label>
+            <div class="col-4">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control" name="address" placeholder="Address" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="country" class="col-2 col-form-label"></label>
+            <div class="col-4">
+                <select class="form-control" id="country">
+                    <option> Select a Country</option>
+                    <option> Nigeria </option>
+                </select>
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control" name="state" placeholder="State" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-2 col-form-label"></label>
+            <div class="col-4">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+            </div>
+            <div class="col-4">
+                <input type="tel" class="form-control" name="telNum" placeholder="Phone Number" />
+            </div>
+        </div>
+    </form>
+</body>
